@@ -13,7 +13,7 @@ $koneksi = mysqli_connect($servername, $username, $password, $database);
 
 if (!$koneksi) {
 	die("Koneksi gagal:".mysqli_connect_error());
-
+}
 	$query = mysqli_query($koneksi, "SELECT * FROM contents");
 	$data = array();
 	while ($row = mysqli_fetch_array($query)) {
